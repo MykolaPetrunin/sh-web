@@ -9,7 +9,6 @@ yarn-error.log*
 
 # Вивідні файли TypeScript
 dist/
-out/
 *.tsbuildinfo
 
 # Вивідні файли Next.js
@@ -17,7 +16,7 @@ out/
 out/
 
 # Персональні налаштування WebStorm
-.idea/
+.idea/*
 
 # Конфігурації Visual Studio Code
-.vscode/
+.vscode/*
