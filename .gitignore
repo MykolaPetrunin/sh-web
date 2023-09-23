@@ -1,0 +1,23 @@
+# Загальні ігноровані файли
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
+.idea/
+
+# Вивідні файли TypeScript
+dist/
+out/
+*.tsbuildinfo
+
+# Вивідні файли Next.js
+.next/
+out/
+
+# Персональні налаштування WebStorm
+.idea/
+
+# Конфігурації Visual Studio Code
+.vscode/
