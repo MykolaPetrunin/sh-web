@@ -25,15 +25,20 @@
     "dev": "next dev",
     "format": "prettier . --write",
     "lint": "eslint  --fix pages/**/*.js",
-    "start": "next start",
-    "prepare": "husky install"
+    "precommit": "lint-staged",
+    "start": "next start"
   },
   "version": "1.0.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
   "lint-staged": {
-    "{src,test}/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix",
-      "prettier --write -u"
-    ],
-    "!**/*.{js,ts,jsx,tsx}": "prettier --write -u"
+    "*.js": [
+      "npm run lint",
+      "npm run format",
+      "git add"
+    ]
   }
 }
